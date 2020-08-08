@@ -115,12 +115,10 @@ while True:
         AI_brain = "Here is the weather today."
         AI_mouth.say(AI_brain)
         AI_mouth.runAndWait()
-    elif "bye" in you.lower():
-        AI_brain = "GoodBye Minh Quang"
-        print("AI: " + AI_brain)
-        AI_mouth.say(AI_brain)
-        AI_mouth.runAndWait()
-        break
+    elif there_exists(["exit", "quit", "goodbye", "bye", "catch you later", "see you later", "see you soon", "talk to you later"]):
+        AI_brain = "See you soon, bye"
+        AI_mouth(AI_brain)
+        exit()
     else:
         AI_brain = "Sorry, I don't understand what you say"
 

@@ -54,9 +54,17 @@ while True:
 
     if you == "":
         AI_brain = "Sorry I don't understand what you say"
-    elif "today" in you:
-        now = datetime.now()
-        AI_brain = now.strftime("is %d %B and the time is %H hours %M minutes")
+    elif there_exists(["how are you","how are you doing"]):
+        AI_brain = "I'm very well, thanks for asking me"
+        AI_mouth(AI_brain)
+    elif there_exists(["what's the date today","what is the date today","tell me about the date today","what day is today"]):
+        todays = date.today()
+		AI_brain = todays.strftime("Today is %B %d, %Y.")
+		AI_mouth(AI_brain)
+    elif "time" in you:
+        times = datetime.now()
+		AI_brain = times.strftime("It's %H hours and %M minutes.")
+		AI_mouth(AI_brain)
     elif "hello" in you:
         AI_brain = "hello Minh Quang"
     elif "handsome" in you:

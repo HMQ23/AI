@@ -59,12 +59,12 @@ while True:
         AI_mouth(AI_brain)
     elif there_exists(["what's the date today","what is the date today","tell me about the date today","what day is today"]):
         todays = date.today()
-		AI_brain = todays.strftime("Today is %B %d, %Y.")
-		AI_mouth(AI_brain)
+        AI_brain = todays.strftime("Today is %B %d, %Y.")
+        AI_mouth(AI_brain)
     elif "time" in you:
         times = datetime.now()
-		AI_brain = times.strftime("It's %H hours and %M minutes.")
-		AI_mouth(AI_brain)
+        AI_brain = times.strftime("It's %H hours and %M minutes.")
+        AI_mouth(AI_brain)
     elif "hello" in you:
         AI_brain = "hello Minh Quang"
     elif "handsome" in you:

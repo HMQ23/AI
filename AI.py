@@ -20,7 +20,7 @@ if 5 < timenow < 12 :
     gtg2 = "Good Morning. "
 elif 12 <= timenow < 13 :
     greeting = "It's lunch time now. Master haven't rested? "
-    gtg2 = "It's lunch time now. However, "
+    gtg2 = "It's lunch time now. "
 elif 13 <= timenow < 18 :
     greeting = "Afternoon, Master! "
     gtg2 = "Good Afternoon. "
@@ -71,7 +71,7 @@ while True:
         AI_brain = "Yes, you're very handsome"
     elif "love me?" in you:
         AI_brain = "No"
-    elif "Wikipedia" in you or "wiki" in you:
+    elif "Wikipedia" in you or "wiki" in you: 
         AI_brain = "This is Wikipedia"
         print("AI: " + AI_brain)
         AI_mouth.say(AI_brain)
@@ -124,8 +124,10 @@ while True:
         AI_mouth.say(AI_brain)
         AI_mouth.runAndWait()
     elif there_exists(["exit", "quit", "goodbye", "bye", "catch you later", "see you later", "see you soon", "talk to you later"]):
-        AI_brain = "See you soon, bye"
-        AI_mouth(AI_brain)
+        AI_brain = "It was great to meet you. See you later!"
+        print("AI: " + AI_brain)
+        AI_mouth.say(AI_brain)
+        AI_mouth.runAndWait()
         exit()
     else:
         AI_brain = "Sorry, I don't understand what you say"

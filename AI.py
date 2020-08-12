@@ -52,8 +52,8 @@ while True:
 
     print("You: " + you)
 
-    if you == "":
-        AI_brain = "Sorry I don't understand what you say"
+    if "hello" in you:
+        AI_brain = "hello Minh Quang"
     elif there_exists(["how are you","how are you doing"]):
         AI_brain = "I'm very well, thanks for asking me"
         AI_mouth(AI_brain)
@@ -65,8 +65,6 @@ while True:
         times = datetime.now()
         AI_brain = times.strftime("It's %H hours and %M minutes.")
         AI_mouth(AI_brain)
-    elif "hello" in you:
-        AI_brain = "hello Minh Quang"
     elif "Wikipedia" in you or "wiki" in you: 
         AI_brain = "This is Wikipedia"
         print("AI: " + AI_brain)
@@ -119,6 +117,8 @@ while True:
         AI_brain = "Here is the weather today."
         AI_mouth.say(AI_brain)
         AI_mouth.runAndWait()
+    elif you == "":
+        AI_brain = "Sorry I don't understand what you say"
     elif there_exists(["exit", "quit", "goodbye", "bye", "catch you later", "see you later", "see you soon", "talk to you later"]):
         AI_brain = "It was great to meet you. See you later!"
         print("AI: " + AI_brain)

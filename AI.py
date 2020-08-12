@@ -67,10 +67,6 @@ while True:
         AI_mouth(AI_brain)
     elif "hello" in you:
         AI_brain = "hello Minh Quang"
-    elif "handsome" in you:
-        AI_brain = "Yes, you're very handsome"
-    elif "love me?" in you:
-        AI_brain = "No"
     elif "Wikipedia" in you or "wiki" in you: 
         AI_brain = "This is Wikipedia"
         print("AI: " + AI_brain)

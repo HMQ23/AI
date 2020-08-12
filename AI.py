@@ -16,15 +16,15 @@ def there_exists(terms):
 x = datetime.now()
 timenow = int(x.strftime("%H"))
 if 5 < timenow < 12 :
-    gtg2 = "Good Morning"
+    print("Good Morning")
 elif 12 <= timenow < 13 :
-    gtg2 = "Lunch time"
+    print("Lunch time")
 elif 13 <= timenow < 18 :
-    gtg2 = "Good Afternoon"
+    print("Good Afternoon")
 elif 18 <= timenow < 23 :
-    gtg2 = "Good Evening"
+    print("Good Evening")
 elif timenow >= 23 or 0 <= timenow <= 5:
-    gtg2 = "Time to sleep now!"
+    print("Time to sleep now!")
 
 while True:
     rate = AI_mouth.getProperty('rate')

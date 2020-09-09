@@ -48,7 +48,7 @@ while True:
     print("You: " + you)
 
     if "hello" in you:
-        AI_brain = "hello Minh Quang"
+        AI_brain = "hi, what can I help you"
     elif there_exists(["how are you","how are you doing"]):
         AI_brain = "I'm very well, thanks for asking me"
     elif there_exists(["what's the date today","what is the date today","tell me about the date today","what day is today"]):

@@ -114,7 +114,7 @@ while True:
         AI_mouth.runAndWait()
         exit()
     else:
-        AI_brain = "Sorry, I don't understand what you say"
+        AI_brain = "Sorry, I don't understand what you're saying!"
 
     print("AI: " + AI_brain)
     AI_mouth.say(AI_brain)
